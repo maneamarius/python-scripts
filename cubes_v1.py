@@ -11,6 +11,10 @@ xmin = [0,    0,  0,  0,  0]
 xmax = [1,    3,  8, 27, 49]
 v =    [125, 64, 27,  8,  1]
 
+maxCubes = 49
+cubeSize = 6
+totalVolume = cubeSize**3
+
 for p in range(xmin[0], xmax[0]):
   for q in range(xmin[1], xmax[1]):
     for r in range(xmin[2], xmax[2]):
@@ -19,6 +23,6 @@ for p in range(xmin[0], xmax[0]):
           volume = p*v[0] + q*v[1] + r*v[2] + s*v[3] + t*v[4]
           cubes = p + q + r + s + t
           numbers = [ p, q, r, s, t ]
-          if volume == 216 and cubes == 49:
+          if volume == totalVolume and cubes == maxCubes:
             print(p,q,r,s,t)
 
