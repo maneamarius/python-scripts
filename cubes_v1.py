@@ -1,7 +1,7 @@
 #!/bin/bin/env python3
 
 # we are trying to solve the following problem:
-# find the cubes can fit exactly inside a cube with size 6
+# find 49 cubes that can fit exactly inside a cube with size 6
 # so we need to find cubes with any size smaller than 6 (1,2,3,4,5)
 # which have a total volume of 216 (6^3)
 # let x be an array which contains be the number of cubes with size 1,2,3,4,5
